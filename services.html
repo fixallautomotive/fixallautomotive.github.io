@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Fix All Automotive | Home</title>
+<title>Fix All Automotive | Services</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Fix All Automotive, Honest, Friendly, Prompt, we strive to offer the highest level of customer service and automotive repairs, 
@@ -19,7 +19,6 @@ Committed to serving you with quality and value. Our mechanics are qualified and
 <!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <!--// css -->
-<link rel="stylesheet" href="css/ken-burns.css">
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome icons -->
@@ -29,6 +28,10 @@ Committed to serving you with quality and value. Our mechanics are qualified and
 <!-- //font -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<!-- parallax -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<script src="js/jarallax.js"></script>
+	<!-- //parallax -->
 </head>
 <body>
 	<!-- banner -->
@@ -47,7 +50,7 @@ Committed to serving you with quality and value. Our mechanics are qualified and
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li><a href="about.html">About</a></li>
-								<li><a href="services.html">Services</a></li>
+								<li><a class="active" href="services.html">Services</a></li>
 								<li><a href="gallery.html">Gallery</a></li>
 								<li><a href="contact.html">Contact</a></li>
 								<div class="clearfix"> </div>
@@ -61,78 +64,95 @@ Committed to serving you with quality and value. Our mechanics are qualified and
 		
 	</div>
 	<!-- //banner -->
-	<div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000" data-pause="hover">
-            <!-- Wrapper for Slides -->
-            <div class="carousel-inner" role="listbox">
-                <!-- First Slide -->
-                <div class="item active">
-					<div class="slider">
-						<div class="carousel-caption kb_caption slider-grid">
-							<h3>Log Book Services</h3>
-						</div>
-					</div>
-                </div>
-
-                <!-- Second Slide -->
-                <div class="item">
-					<div class="slider slider1">
-						<div class="carousel-caption kb_caption kb_caption_right slider-grid">
-							<h3>Engine and Transmission</h3>
-						</div>
-					</div>
-                </div>
-
-                <!-- Third Slide -->
-                <div class="item">
-					<div class="slider slider2">
-						<div class="carousel-caption kb_caption kb_caption_center slider-grid">
-						   <h3>Performance, Upgrades and Customisation</h3>
-						</div>
-					</div>
-                </div>
+	<!-- a-about -->
+	<div class="a-grid">
+		<div class="container">
+			<div class="w3l-about-heading">
+				<h2>Our Services</h2>
 				
-				<!-- Fourth Slide -->
-                <div class="item">
-					<div class="slider slider3">
-						<div class="carousel-caption kb_caption kb_caption_center slider-grid">
-						   <h3>Braking and Cooling System</h3>
-						</div>
+				<p>From your on road vehicles to your off road vehicles, for all service and repairs on all makes and models, come down and see us at Fix All Automotive</p>
+				<p>We have a courtesy car available </p>
+			</div>
+			<div class="agileits-services-grids">
+				<div class="col-md-6 w3l-services-grid">
+					<div class="services-grid-info">
+						<h4>Log Book Services</h4>
+						<p>Protect your new vehicle warranty, Fix All Automotive are qualified and are able to complete all log book service requirements on any make or model according to the manufacturer’s specification.</p>
 					</div>
-                </div>
-				
-				<!-- Fifth Slide -->
-                <div class="item">
-					<div class="slider slider4">
-						<div class="carousel-caption kb_caption kb_caption_center slider-grid">
-						   <h3>Electrical</h3>
-						</div>
+					<div class="services-grid-info">
+						<h4>Engine and Transmission</h4>
+						<p>Maintenance, minor and major servicing, repairs, replacement, upgrade or a complete rebuild. </p>
+						<p>Oil | Air and Oil Filters | Timing Belts | Pulleys | Fuel Systems | Clutchs | Converters | Much more...</p>
 					</div>
-                </div>
-				
-				<!-- Sixth Slide -->
-                <div class="item">
-					<div class="slider slider5">
-						<div class="carousel-caption kb_caption kb_caption_center slider-grid">
-						   <h3>Diagnostic and Repairs</h3>
-						</div>
+					<div class="services-grid-info">
+						<h4>Braking and Cooling System</h4>
+						<p>The braking system of your car is logically one of the most important systems on your vehicle. For your own safety and the safety of others, it is critical to have your braking system in optimal condition at all times.</p>
+						<p>Brake Disks | Pads | Brake Likes | Brake Drums | Upgrades | Hoses | Coolant | Much more... </p>
 					</div>
-                </div>
-
-            </div>
-            <!-- Navigation Buttons -->
-            <!-- Left Button -->
-            <a class="left carousel-control kb_control_left" href="#kb" role="button" data-slide="prev">
-                <span class="fa fa-angle-left kb_icons" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <!-- Right Button -->
-            <a class="right carousel-control kb_control_right" href="#kb" role="button" data-slide="next">
-                <span class="fa fa-angle-right kb_icons" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-    </div> 
-	
-	
+				</div>
+				<div class="col-md-6 w3l-services-grid">
+					<div class="services-grid-info">
+						<h4>Electrical</h4>
+						<p>Maintenance, servicing, repairs, replacement, upgrade or a complete rebuild. </p>
+						<p>Alternator | Starter Motor | Computers | Sensors | Wiring | Fuses | Light Bulbs | Much more...</p>
+					</div>
+					<div class="services-grid-info">
+						<h4>Performance, Upgrades and Customisation</h4>
+						<p>We can upgrade and customise your vehicle to suit your needs. </p>
+						<p>Exhausts | Suspension | Lighting | Cams | Relocations | Much more...</p>
+					</div>
+					<div class="services-grid-info">
+						<h4>Diagnostic and Repairs</h4>
+						<p>Cars are complex pieces of machinery, and one of the most complicated systems inside a car is the electrics.</p>
+						<p>Fix All Automotive can diagnose and repair the electrical gremlins and clear the codes on your vehicle.</p>
+						
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //a-about -->
+	<!-- different -->
+	<div class="jarallax more-offer">
+		<div class="container">
+			<div class="w3-different-heading">
+				<h3>Supply and Fit</h3>
+				<p>We supply and fit quality parts and accessories.</p>
+			</div>
+			<div class="agileits-services-grids">
+				<div class="col-md-6 w3l-services-grid">
+					<div class="services-grid-info">
+						<img src="images/logo-penrite.jpg" </img>
+					</div>
+					<div class="services-grid-info">
+						<img src="images/logo-martini.jpg" </img>
+					</div>
+					
+					
+				</div>
+				<div class="col-md-6 w3l-services-grid">
+					<div class="services-grid-info">
+						<img src="images/logo-ryco.jpg" </img>
+					</div>
+					<div class="services-grid-info">
+						<img src="images/logo-wurth.png" </img>
+					</div>
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+        /* init Jarallax */
+        $('.jarallax').jarallax({
+            speed: 0.5,
+            imgWidth: 1366,
+            imgHeight: 768
+        })
+    </script>
+	<!-- //different -->
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -190,6 +210,5 @@ Committed to serving you with quality and value. Our mechanics are qualified and
 		</div>
 	</div>
 	<!-- //footer -->
-	<script src="js/SmoothScroll.min.js"></script>
 </body>	
 </html>
